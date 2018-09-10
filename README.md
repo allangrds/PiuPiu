@@ -16,11 +16,11 @@
 </p>
 
 ## How to use
----
+
 
 1. To clone and run this application, you'll need [Git](https://git-scm.com),[Node.js](https://nodejs.org/en/download/), and [Yarn](https://yarnpkg.com/pt-BR/).
 
-2. Change the filename `.env.example` to `.env` and update it's content with your configurations:
+2. Change the filename `.env.example` to `.env` and update its content with your configurations:
 
 ```env
 CONSUMER_KEY=''
@@ -30,7 +30,7 @@ ACCESS_TOKEN_KEY_SECRET=''
 TWEET_TIMER='* * * * * *' //like cron config
 ```
 
-3. Change the filename `tweets.json.example` to `tweets.json` and update it's content with your tweets:
+3. Change the filename `tweets.json.example` to `tweets.json` and update its content with your tweets:
 
 ```json
 [
@@ -56,7 +56,7 @@ $ yarn start
 ```
 
 ## Credits
----
+
 This software uses code from several open source packages.
 
 * [Dotenv](https://github.com/motdotla/dotenv)
@@ -65,7 +65,7 @@ This software uses code from several open source packages.
 * [Twitter](https://www.npmjs.com/package/twitter)
 
 ## License
----
+
 MIT
 
 ---
