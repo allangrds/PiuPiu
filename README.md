@@ -7,63 +7,65 @@
   <br>
 </h1>
 
-<h4 align="center">Um agendador de Tweets.</h4>
+<h4 align="center">A Tweets scheduler.</h4>
 
 <p align="center">
-  <a href="#como-usar">Como usar</a> •
-  <a href="#creditos">Creditos</a> •
-  <a href="#licença">Licença</a>
+  <a href="#how-to-use">How to Use</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
 </p>
 
-## Como usar
-Para clonar e usar essa aplicação, você precisará do [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) e o gerenciador de pacotes [Yarn](https://yarnpkg.com/pt-BR/).
+## How to use
+---
 
-Após fazer isso, mude o nome do arquivo `.env.example` para `.env` e mude seu conteúdo:
+1. To clone and run this application, you'll need [Git](https://git-scm.com),[Node.js](https://nodejs.org/en/download/), and [Yarn](https://yarnpkg.com/pt-BR/).
+
+2. Change the filename `.env.example` to `.env` and update it's content with your configurations:
 
 ```env
-CONSUMER_KEY='chave_de_consumo_publica_twitter_api'
-CONSUMER_KEY_SECRET='chave_de_consumo_secreta_twitter_api'
-ACCESS_TOKEN_KEY='token_publico_twitter_api'
-ACCESS_TOKEN_KEY_SECRET='token_secreto_twitter_api'
-TWEET_TIMER='* * * * * *' //assim como a configuração de cron
+CONSUMER_KEY=''
+CONSUMER_KEY_SECRET=''
+ACCESS_TOKEN_KEY=''
+ACCESS_TOKEN_KEY_SECRET=''
+TWEET_TIMER='* * * * * *' //like cron config
 ```
 
-E para finalizar, mude o nome do arquivo `tweets.json.example` para `tweets.json`, e estruture os posts que deseja publicar:
+3. Change the filename `tweets.json.example` to `tweets.json` and update it's content with your tweets:
 
 ```json
 [
     {
-        "title": "Título do tweet",
+        "title": "Tweet title",
         "link": "https://twitter.com/allangrds",
         "hashtags": ["test", "project"]
     },
     {
-        "title": "Título do tweet 2",
+        "title": "Tweet title 2",
         "link": "https://twitter.com/allangrds",
         "hashtags": ["test2", "project2"]
     }
 ]
 ```
 
+4. Build and start the scheduler:
+
 ```bash
-# Clona o repositório
-$ git clone git@github.com:allangrds/PiuPiu.git
-
-# Acessa o repositório
-$ cd piupiu
-
-# Instala as dependências
-$ yarn
-
-# Gera o build
 $ yarn build
 
-# Starta a aplicação
 $ yarn start
 ```
 
-## Licença
+## Credits
+---
+This software uses code from several open source packages.
 
+* [Dotenv](https://github.com/motdotla/dotenv)
+* [Node-schedule](https://github.com/node-schedule/node-schedule)
+* [Tinyurl](https://github.com/JeffResc/TinyURL-Node.js)
+* [Twitter](https://www.npmjs.com/package/twitter)
+
+## License
+---
 MIT
 
 ---
