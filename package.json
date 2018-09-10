@@ -1,0 +1,25 @@
+{
+  "name": "PiuPiu",
+  "version": "1.0.0",
+  "description": "Agende tweets de forma fácil",
+  "main": "index.js",
+  "repository": "git@github.com:allangrds/PiuPiu.git",
+  "author": "Allan Ramos <allangrds@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "reset && node dist/index.js",
+    "build": "babel src -d dist"
+  },
+  "dependencies": {
+    "dotenv": "6.0.0",
+    "node-schedule": "1.3.0",
+    "tinyurl": "1.1.2",
+    "twitter": "1.7.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "^9.0.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0"
+  }
+}

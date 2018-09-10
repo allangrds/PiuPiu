@@ -1,0 +1,13 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+      "max-len": [
+        "error",
+        { "code": 80 }
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+    }
+  }
