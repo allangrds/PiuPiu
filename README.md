@@ -17,10 +17,21 @@
 
 ## How to use
 
+1. Clone this repo, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/), and [Yarn](https://yarnpkg.com/pt-BR/) or [NPM](https://www.npmjs.com/get-npm) working fine.
 
-1. To clone and run this application, you'll need [Git](https://git-scm.com),[Node.js](https://nodejs.org/en/download/), and [Yarn](https://yarnpkg.com/pt-BR/).
+2. Install dependencies running:
 
-2. Change the filename `.env.example` to `.env` and update its content with your configurations:
+```
+$ yarn install
+```
+
+or run code below if do you are the old school ;)
+
+```
+$ npm install
+```
+
+3. Rename the filename `.env.example` to `.env` and update its content with your configurations. You can get it at [developers page of Twitter](https://developer.twitter.com).
 
 ```env
 CONSUMER_KEY=''
@@ -30,39 +41,45 @@ ACCESS_TOKEN_KEY_SECRET=''
 TWEET_TIMER='* * * * * *' //like cron config
 ```
 
-3. Change the filename `tweets.json.example` to `tweets.json` and update its content with your tweets:
+4. Rename the filename `tweets.json.example` to `tweets.json` and update its content with your tweets:
 
 ```json
 [
-    {
-        "title": "Tweet title",
-        "link": "https://twitter.com/allangrds",
-        "hashtags": ["test", "project"]
-    },
-    {
-        "title": "Tweet title 2",
-        "link": "https://twitter.com/allangrds",
-        "hashtags": ["test2", "project2"]
-    }
+  {
+    "title": "Tweet title",
+    "link": "https://twitter.com/allangrds",
+    "hashtags": ["test", "project"]
+  },
+  {
+    "title": "Tweet title 2",
+    "link": "https://twitter.com/allangrds",
+    "hashtags": ["test2", "project2"]
+  }
 ]
 ```
 
-4. Build and start the scheduler:
+5. Run PiuPiu and spread the words:
 
 ```bash
 $ yarn build
-
 $ yarn start
+```
+
+or
+
+```
+$ npm run build
+$ npm start
 ```
 
 ## Credits
 
 This software uses code from several open source packages.
 
-* [Dotenv](https://github.com/motdotla/dotenv)
-* [Node-schedule](https://github.com/node-schedule/node-schedule)
-* [Tinyurl](https://github.com/JeffResc/TinyURL-Node.js)
-* [Twitter](https://www.npmjs.com/package/twitter)
+- [Dotenv](https://github.com/motdotla/dotenv)
+- [Node-schedule](https://github.com/node-schedule/node-schedule)
+- [Tinyurl](https://github.com/JeffResc/TinyURL-Node.js)
+- [Twitter](https://www.npmjs.com/package/twitter)
 
 ## License
 
