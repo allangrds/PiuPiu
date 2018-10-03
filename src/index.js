@@ -37,10 +37,11 @@ const scheduler = NodeSchedule.scheduleJob(process.env.TWEET_TIMER, () => {
             }
 
             client.post('statuses/update', tweet, (error) => {
-                if(error) console.log(error);
-
-                console.log(`Publicação #${count}: '${title}' realizada`)
-
+                if(error){
+                    console.log(error);
+                } else{
+                    console.log(`Publicação #${count}: '${title}' realizada`);
+                }
                 ++count;
             });
         });
