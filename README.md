@@ -61,14 +61,12 @@ TWEET_TIMER='* * * * * *' //like cron config
 5. Run PiuPiu and spread the words:
 
 ```bash
-$ yarn build
 $ yarn start
 ```
 
 or
 
 ```
-$ npm run build
 $ npm start
 ```
 

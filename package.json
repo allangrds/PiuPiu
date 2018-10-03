@@ -7,12 +7,14 @@
   "author": "Allan Ramos <allangrds@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "reset && node dist/index.js",
-    "build": "babel src -d dist"
+    "start": "npm-run-all build reset",
+    "build": "babel src -d dist",
+    "reset": "reset && node dist/index.js"
   },
   "dependencies": {
     "dotenv": "6.0.0",
     "node-schedule": "1.3.0",
+    "npm-run-all": "4.1.3",
     "tinyurl": "1.1.2",
     "twitter": "1.7.1"
   },
